@@ -17,7 +17,8 @@ namespace RedCombat
         Rectangle Rect;
 
         Vector2 Velocity;
-        int ReloadTime;
+        int ReloadTime = 0;
+        int MAXReloadTime;
         int NumOfBulltes;
         bool Reloading;
 
@@ -27,10 +28,37 @@ namespace RedCombat
             Text2D = t;
             Rect = r;
             Velocity = v;
-            ReloadTime = reloadT;
+            MAXReloadTime = reloadT;
             NumOfBulltes = BulletNum;
         }
 
+        public void Update()
+        {
+            if (Reloading)
+            {
+                ReloadTime++;
+                if(ReloadTime >= MAXReloadTime)
+                {
+                    Reloading = false;
+                    ReloadTime = 0;
+                }
+            }
+        }
+
+
+        public void Shoot()
+        {
+            if (!Reloading)
+            {
+                Bullet b = new Bullet();
+                Reloading = true;
+            }
+        }
+
+        public void Respawn()
+        {
+
+        }
 
 
     }

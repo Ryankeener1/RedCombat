@@ -23,6 +23,8 @@ namespace RedCombat
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            graphics.PreferredBackBufferWidth = 1080;
+            graphics.PreferredBackBufferHeight = 720;
         }
 
         /// <summary>
@@ -81,7 +83,7 @@ namespace RedCombat
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.SkyBlue);
 
             // TODO: Add your drawing code here
 
