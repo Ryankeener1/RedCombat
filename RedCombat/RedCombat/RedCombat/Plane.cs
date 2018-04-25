@@ -17,9 +17,16 @@ namespace RedCombat
         Rectangle Rect;
 
         Vector2 Velocity;
-        int ReloadTime;
+
+        int ReloadTime = 0;
+        int MAXReloadTime;
         int NumOfBulltes;
-        bool Reloading;
+        int RespawnTime = 0;
+        int InvulnerableTime = 0;
+
+        public bool Reloading = false;
+        public bool isDead = false;
+        public bool isInvulnerable = true;
 
 
         public Plane(Texture2D t, Rectangle r, Vector2 v, int reloadT, int BulletNum)
@@ -27,10 +34,61 @@ namespace RedCombat
             Text2D = t;
             Rect = r;
             Velocity = v;
-            ReloadTime = reloadT;
+            MAXReloadTime = reloadT;
             NumOfBulltes = BulletNum;
         }
 
+        public void Update()
+        {
+            //Reloading
+
+            if (Reloading)
+            {
+                ReloadTime++;
+                if(ReloadTime >= MAXReloadTime)
+                {
+                    Reloading = false;
+                }
+            }
+
+            //DEAD
+            if (isDead)
+            {
+                RespawnTime++;
+                if (RespawnTime >= 120)
+                {
+                    isDead = false;
+                    InvulnerableTime = 0;
+                    isInvulnerable = true;
+                }
+            }
+
+            //Invulnerable
+            if (isInvulnerable)
+            {
+                InvulnerableTime++;
+                if(InvulnerableTime >= 120)
+                {
+                    isInvulnerable = false;
+                }
+            }
+        }
+
+
+        public void Shoot()
+        {
+            if (!Reloading)
+            {
+                Bullet b = new Bullet();
+                ReloadTime = 0;
+                Reloading = true;
+            }
+        }
+
+        public void IsShot()
+        {
+            isDead = true;
+        }
 
 
     }
