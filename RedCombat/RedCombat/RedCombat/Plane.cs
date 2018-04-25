@@ -24,9 +24,9 @@ namespace RedCombat
         int RespawnTime = 0;
         int InvulnerableTime = 0;
 
-        bool Reloading = false;
-        bool isDead = false;
-        bool isInvulnerable = true;
+        public bool Reloading = false;
+        public bool isDead = false;
+        public bool isInvulnerable = true;
 
 
         public Plane(Texture2D t, Rectangle r, Vector2 v, int reloadT, int BulletNum)
