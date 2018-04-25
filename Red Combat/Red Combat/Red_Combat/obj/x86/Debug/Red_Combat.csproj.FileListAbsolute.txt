@@ -1,0 +1,17 @@
+C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\bin\x86\Debug\Red_Combat.exe
+C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\bin\x86\Debug\Red_Combat.pdb
+C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\bin\x86\Debug\Microsoft.Xna.Framework.dll
+C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
+C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.dll
+C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.dll
+C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\bin\x86\Debug\Microsoft.Xna.Framework.xml
+C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\bin\x86\Debug\Microsoft.Xna.Framework.Game.xml
+C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
+C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
+C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\obj\x86\Debug\Red_Combat.csprojResolveAssemblyReference.cache
+C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\obj\x86\Debug\Red_Combat.exe
+C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\obj\x86\Debug\Red_Combat.pdb
+C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\bin\x86\Debug\Content\Cloud.xnb
