@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-namespace RedCombat
+namespace Red_Combat
 {
     /// <summary>
     /// This is the main type for your game
@@ -18,6 +18,10 @@ namespace RedCombat
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Cloud[] clouds;
+        int CLOUD_AMOUNT;
+        Texture2D cloudText;
+        Random rand = new Random();
 
         public Game1()
         {
@@ -36,7 +40,8 @@ namespace RedCombat
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            CLOUD_AMOUNT = 3;
+            clouds = new Cloud[CLOUD_AMOUNT];
             base.Initialize();
         }
 
@@ -48,7 +53,11 @@ namespace RedCombat
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            cloudText = Content.Load<Texture2D>("Cloud");
+            for (int i = 0; i < clouds.Length; i++)
+            {
+                clouds[i] = new Cloud(cloudText, new Rectangle(rand.Next(0, 1080), rand.Next(0, 720), rand.Next(200, 300), rand.Next(100, 150)));
+            }
             // TODO: use this.Content to load your game content here
         }
 
@@ -71,8 +80,11 @@ namespace RedCombat
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-
-            // TODO: Add your update logic here
+            for (int i = 0; i < clouds.Length; i++)
+            {
+                clouds[i].CloudUpdate();
+            }
+            
 
             base.Update(gameTime);
         }
@@ -83,9 +95,14 @@ namespace RedCombat
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.SkyBlue);
+            GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
+            spriteBatch.Begin();
+            for (int i = 0; i < clouds.Length; i++)
+            {
+                spriteBatch.Draw(clouds[i].CloudText, clouds[i].CloudRect, Color.White);
+            }
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
