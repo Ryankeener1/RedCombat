@@ -2,52 +2,25 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>Ammo.png</Source>
-      <Name>Ammo</Name>
+      <Source>Cloud.png</Source>
+      <Name>Cloud</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Ammo.xnb</Output>
-      <Time>2018-04-20T11:37:24.5045311-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Bomber.png</Source>
-      <Name>Bomber</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Bomber.xnb</Output>
-      <Time>2018-04-20T11:37:24.5155322-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Fighter.png</Source>
-      <Name>Fighter</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Fighter.xnb</Output>
-      <Time>2018-04-20T11:37:24.5245331-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Stealth.png</Source>
-      <Name>Stealth</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Stealth.xnb</Output>
-      <Time>2018-04-20T11:37:24.533534-05:00</Time>
+      <Output>C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\bin\x86\Debug\Content\Cloud.xnb</Output>
+      <Time>2018-04-20T10:58:32.6660609-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
-      <ContentProjectGUID>{F06EDBA5-BA22-4BF3-9B0F-F7D02DE256B6}</ContentProjectGUID>
+      <ContentProjectGUID>{CED1313D-451E-4CBA-B010-C9C9A245DDBB}</ContentProjectGUID>
       <TargetPlatform>Windows</TargetPlatform>
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombatContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_CombatContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\123066\Desktop\RedCombat-Kyle\Red Combat\Red Combat\Red_Combat\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
