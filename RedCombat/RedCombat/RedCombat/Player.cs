@@ -13,8 +13,27 @@ namespace RedCombat
 {
     class Player
     {
+        public GamePadState Gpstate;
+        PlayerIndex PlayerNum;
+        Plane CurrentPlane;
+        Vector2 velocity;
+
+        public Player(Plane p, PlayerIndex i)
+        {
+            CurrentPlane = p;
+            PlayerNum = i;
+            Gpstate = GamePad.GetState(PlayerNum);
+        }
+
+        public void Update()
+        {
+            var oldGPS = Gpstate;
+            Gpstate = GamePad.GetState(PlayerNum);
+            
 
 
+
+        }
 
     }
 }

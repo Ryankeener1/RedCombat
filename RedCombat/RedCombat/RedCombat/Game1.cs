@@ -18,11 +18,18 @@ namespace RedCombat
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        GamePadState gamepad = GamePad.GetState(PlayerIndex.One);
+        Plane p1;
+
+        int i = 0;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+
+
             graphics.PreferredBackBufferWidth = 1080;
             graphics.PreferredBackBufferHeight = 720;
         }
@@ -36,7 +43,9 @@ namespace RedCombat
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            Texture2D text = Content.Load<Texture2D>("Bomber");
+            Texture2D bull = Content.Load<Texture2D>("Ammo");
+            p1 = new Plane(text, new Rectangle(100, 100, 100, 100), Color.White, new Vector2(5, 5), 5, 5, bull);
             base.Initialize();
         }
 
@@ -48,6 +57,9 @@ namespace RedCombat
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            
+
 
             // TODO: use this.Content to load your game content here
         }
@@ -71,7 +83,11 @@ namespace RedCombat
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-
+            i++;
+            if (p1 != null)
+            {
+                p1.Update();
+            }
             // TODO: Add your update logic here
 
             base.Update(gameTime);
@@ -86,7 +102,12 @@ namespace RedCombat
             GraphicsDevice.Clear(Color.SkyBlue);
 
             // TODO: Add your drawing code here
-
+            spriteBatch.Begin();
+            if (p1 != null)
+            {
+                spriteBatch.Draw(p1.Text2D, p1.Rect, null, p1.PlaneColor, (float)(p1.rotation/(2*Math.PI)), new Vector2(p1.Text2D.Width/2, p1.Text2D.Height/2), SpriteEffects.None, 0);
+            }
+            spriteBatch.End();
             base.Draw(gameTime);
         }
     }

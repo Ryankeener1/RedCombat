@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Ammo.xnb</Output>
-      <Time>2018-04-20T11:37:24.5045311-05:00</Time>
+      <Time>2018-04-25T09:43:30-05:00</Time>
     </Item>
     <Item>
       <Source>Bomber.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Bomber.xnb</Output>
-      <Time>2018-04-20T11:37:24.5155322-05:00</Time>
+      <Time>2018-04-25T09:43:30-05:00</Time>
     </Item>
     <Item>
       <Source>Fighter.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Fighter.xnb</Output>
-      <Time>2018-04-20T11:37:24.5245331-05:00</Time>
+      <Time>2018-04-25T09:43:30-05:00</Time>
     </Item>
     <Item>
       <Source>Stealth.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Stealth.xnb</Output>
-      <Time>2018-04-20T11:37:24.533534-05:00</Time>
+      <Time>2018-04-25T09:43:30-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
