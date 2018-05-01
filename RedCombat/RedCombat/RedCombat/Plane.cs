@@ -14,6 +14,7 @@ namespace RedCombat
     class Plane
     {
         GamePadState gs = GamePad.GetState(PlayerIndex.One);
+        PlayerIndex Index = 0;
         public Texture2D Text2D;
        
        public  Rectangle Rect;
@@ -36,7 +37,7 @@ namespace RedCombat
         Texture2D bulletTex;
 
 
-        public Plane(Texture2D t, Rectangle r, Color c, Vector2 v, int reloadT, int BulletNum, Texture2D bulletT)
+        public Plane(Texture2D t, Rectangle r, Color c, Vector2 v, int reloadT, int BulletNum, Texture2D bulletT, PlayerIndex g)
         {
             Text2D = t;
             Rect = r;
@@ -45,11 +46,12 @@ namespace RedCombat
             MAXReloadTime = reloadT;
             NumOfBulltes = BulletNum;
             bulletTex = bulletT;
+            Index = g;
         }
 
         public void Update()
         {
-            gs = GamePad.GetState(PlayerIndex.One);
+            gs = GamePad.GetState(Index);
             //Reloading
 
 
@@ -89,29 +91,7 @@ namespace RedCombat
 
 
 
-            Velocity.X += gs.ThumbSticks.Left.Y;
-            Velocity.Y += gs.ThumbSticks.Left.Y;
-
-            if (Velocity.X <= 0)
-            {
-                Velocity.X = 0;
-            }
-            if (Velocity.Y <= 0)
-            {
-                Velocity.Y = 0;
-            }
-
-
-            if (Velocity.X > 20)
-            {
-                Velocity.X = 20;
-            }
-
-            if (Velocity.Y > 20)
-            {
-                Velocity.Y = 20;
-            }
-
+            
             if (((rotation + 5 * (gs.ThumbSticks.Right.X)) % 360) >= 0)
             {
                 rotation = (int)((rotation + 5 * (gs.ThumbSticks.Right.X)) % 360);
@@ -161,6 +141,12 @@ namespace RedCombat
         public void IsShot()
         {
             isDead = true;
+
+        }
+
+        public void Draw(SpriteBatch spriteBatch)
+        {
+            spriteBatch.Draw(Text2D, Rect, null, PlaneColor, (float)(rotation * (Math.PI / 180)), new Vector2(Text2D.Width / 2, Text2D.Height / 2), SpriteEffects.None, 0);
 
         }
 

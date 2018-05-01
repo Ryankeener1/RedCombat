@@ -44,8 +44,11 @@ namespace RedCombat
         {
             // TODO: Add your initialization logic here
             Texture2D text = Content.Load<Texture2D>("Fighter");
+            Texture2D text1 = Content.Load<Texture2D>("Bomber");
+            Texture2D text2 = Content.Load<Texture2D>("Stealth");
             Texture2D bull = Content.Load<Texture2D>("Ammo");
-            p1 = new Plane(text, new Rectangle(100, 100, 80, 80), Color.White, new Vector2(8, 8), 5, 5, bull);
+
+            p1 = new Plane(text, new Rectangle(100, 100, 80, 80), Color.White, new Vector2(8, 8), 5, 5, bull, PlayerIndex.One);
             base.Initialize();
         }
 
@@ -103,10 +106,7 @@ namespace RedCombat
 
             // TODO: Add your drawing code here
             spriteBatch.Begin();
-            if (p1 != null)
-            {
-                spriteBatch.Draw(p1.Text2D, p1.Rect, null, p1.PlaneColor, (float )(p1.rotation * (Math.PI / 180)), new Vector2(p1.Text2D.Width/2, p1.Text2D.Height/2), SpriteEffects.None, 0);
-            }
+            p1.Draw(spriteBatch);
             spriteBatch.End();
             base.Draw(gameTime);
         }
