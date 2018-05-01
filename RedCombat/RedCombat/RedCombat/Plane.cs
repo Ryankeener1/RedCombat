@@ -14,33 +14,72 @@ namespace RedCombat
     class Plane
     {
         Texture2D Text2D;
+       
         Rectangle Rect;
 
         Vector2 Velocity;
+
         int ReloadTime = 0;
         int MAXReloadTime;
         int NumOfBulltes;
-        bool Reloading;
+        int RespawnTime = 0;
+        int InvulnerableTime = 0;
+        Color PlaneColor;
+
+        public bool Reloading = false;
+        public bool isDead = false;
+        public bool isInvulnerable = true;
+
+        Texture2D bulletTex;
 
 
-        public Plane(Texture2D t, Rectangle r, Vector2 v, int reloadT, int BulletNum)
+        public Plane(Texture2D t, Rectangle r, Color c, Vector2 v, int reloadT, int BulletNum, Texture2D bulletT)
         {
             Text2D = t;
             Rect = r;
+            PlaneColor = c;
             Velocity = v;
             MAXReloadTime = reloadT;
             NumOfBulltes = BulletNum;
+            bulletTex = bulletT;
         }
 
         public void Update()
         {
+            //Reloading
+
+
             if (Reloading)
             {
                 ReloadTime++;
                 if(ReloadTime >= MAXReloadTime)
                 {
                     Reloading = false;
-                    ReloadTime = 0;
+                   
+
+                }
+            }
+
+            //DEAD
+            if (isDead)
+            {
+                RespawnTime++;
+                if (RespawnTime >= 120)
+                {
+                    isDead = false;
+                    InvulnerableTime = 0;
+                    isInvulnerable = true;
+                }
+            }
+
+            //Invulnerable
+            if (isInvulnerable)
+            {
+                InvulnerableTime++;
+                if(InvulnerableTime >= 120)
+                {
+                    isInvulnerable = false;
+
                 }
             }
         }
@@ -50,13 +89,15 @@ namespace RedCombat
         {
             if (!Reloading)
             {
-                Bullet b = new Bullet();
+                Bullet b = new Bullet(bulletTex, new Rectangle(200, 200, 20, 10), PlaneColor, Math.PI, 3);
+                ReloadTime = 0;
                 Reloading = true;
             }
         }
 
-        public void Respawn()
+        public void IsShot()
         {
+            isDead = true;
 
         }
 
