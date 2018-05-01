@@ -124,7 +124,7 @@ namespace RedCombat
 
 
             Rect.X += (int)(Velocity.X * (Math.Cos(rotation * (Math.PI / 180))));
-            Rect.Y += (int)(Velocity.X * (Math.Sin(rotation * (Math.PI / 180))));
+            Rect.Y += (int)(Velocity.Y * (Math.Sin(rotation * (Math.PI / 180))));
 
 
             if (Rect.X % 1080 < -50)
