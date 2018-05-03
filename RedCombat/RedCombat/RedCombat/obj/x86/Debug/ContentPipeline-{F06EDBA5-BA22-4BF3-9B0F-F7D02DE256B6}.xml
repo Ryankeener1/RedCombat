@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\123066\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Ammo.xnb</Output>
+      <Output>C:\Users\123066\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Ammo.xnb</Output>
       <Time>2018-04-25T09:59:32-05:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\123066\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Bomber.xnb</Output>
+      <Output>C:\Users\123066\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Bomber.xnb</Output>
       <Time>2018-04-25T09:59:32-05:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\123066\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Fighter.xnb</Output>
+      <Output>C:\Users\123066\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Fighter.xnb</Output>
       <Time>2018-04-25T09:59:32-05:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\123066\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Stealth.xnb</Output>
+      <Output>C:\Users\123066\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Stealth.xnb</Output>
       <Time>2018-04-25T09:59:32-05:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\123066\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Cloud.xnb</Output>
+      <Output>C:\Users\123066\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Cloud.xnb</Output>
       <Time>2018-04-27T11:06:59.1914311-05:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\123066\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Blank.xnb</Output>
+      <Output>C:\Users\123066\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Blank.xnb</Output>
       <Time>2018-04-27T11:36:45.7601554-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -62,10 +62,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\123066\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombatContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\123066\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombat\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\123066\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombat\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\123066\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\123066\Desktop\RedCombat\RedCombat\RedCombatContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\123066\Desktop\RedCombat\RedCombat\RedCombat\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\123066\Desktop\RedCombat\RedCombat\RedCombat\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\123066\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

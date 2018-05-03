@@ -27,6 +27,9 @@ namespace RedCombat
         Rectangle background;
         Texture2D blank;
         bool toggleClouds;
+        GamePadState gamepad = GamePad.GetState(PlayerIndex.One);
+        Plane p1;
+        int i = 0;
 
         public Game1()
         {
@@ -47,9 +50,14 @@ namespace RedCombat
             // TODO: Add your initialization logic here
             CLOUD_AMOUNT = 3;
             clouds = new Cloud[CLOUD_AMOUNT];
-            mapColor = 3; //button
+            mapColor = 0; //button
             background = new Rectangle(0, 0, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
             toggleClouds = true; //button
+            Texture2D text = Content.Load<Texture2D>("Fighter");
+            Texture2D text1 = Content.Load<Texture2D>("Bomber");
+            Texture2D text2 = Content.Load<Texture2D>("Stealth");
+            Texture2D bull = Content.Load<Texture2D>("Ammo");
+            p1 = new Plane(text, new Rectangle(100, 100, 50, 50), Color.White, new Vector2(5, 5), 5, 5, bull, PlayerIndex.One);
             base.Initialize();
         }
 
@@ -93,6 +101,11 @@ namespace RedCombat
             {
                 clouds[i].CloudUpdate();
             }
+            i++;
+            if (p1 != null)
+            {
+                p1.Update();
+            }
 
 
             base.Update(gameTime);
@@ -113,6 +126,7 @@ namespace RedCombat
             {
                 spriteBatch.Draw(clouds[i].CloudText, clouds[i].CloudRect, Color.White);
             }
+            p1.Draw(spriteBatch);
             spriteBatch.End();
 
             base.Draw(gameTime);
