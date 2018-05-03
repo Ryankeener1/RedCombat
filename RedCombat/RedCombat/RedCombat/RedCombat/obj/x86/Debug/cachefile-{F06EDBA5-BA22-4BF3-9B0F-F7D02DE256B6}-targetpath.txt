@@ -1,0 +1,6 @@
+Content\Ammo.xnb
+Content\Bomber.xnb
+Content\Fighter.xnb
+Content\Stealth.xnb
+Content\Cloud.xnb
+Content\Blank.xnb
