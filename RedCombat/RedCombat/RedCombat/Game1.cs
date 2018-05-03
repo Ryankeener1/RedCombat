@@ -18,11 +18,18 @@ namespace RedCombat
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        GamePadState gamepad = GamePad.GetState(PlayerIndex.One);
+        Plane p1;
+
+        int i = 0;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+
+
             graphics.PreferredBackBufferWidth = 1080;
             graphics.PreferredBackBufferHeight = 720;
         }
@@ -36,7 +43,12 @@ namespace RedCombat
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            Texture2D text = Content.Load<Texture2D>("Fighter");
+            Texture2D text1 = Content.Load<Texture2D>("Bomber");
+            Texture2D text2 = Content.Load<Texture2D>("Stealth");
+            Texture2D bull = Content.Load<Texture2D>("Ammo");
 
+            p1 = new Plane(text, new Rectangle(100, 100, 50, 50), Color.White, new Vector2(4, 4), 5, 5, bull, PlayerIndex.One);
             base.Initialize();
         }
 
@@ -48,6 +60,9 @@ namespace RedCombat
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            
+
 
             // TODO: use this.Content to load your game content here
         }
@@ -71,7 +86,11 @@ namespace RedCombat
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-
+            i++;
+            if (p1 != null)
+            {
+                p1.Update();
+            }
             // TODO: Add your update logic here
 
             base.Update(gameTime);
@@ -86,7 +105,9 @@ namespace RedCombat
             GraphicsDevice.Clear(Color.SkyBlue);
 
             // TODO: Add your drawing code here
-
+            spriteBatch.Begin();
+            p1.Draw(spriteBatch);
+            spriteBatch.End();
             base.Draw(gameTime);
         }
     }
