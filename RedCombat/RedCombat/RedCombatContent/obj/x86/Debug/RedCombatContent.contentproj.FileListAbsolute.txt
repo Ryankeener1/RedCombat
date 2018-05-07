@@ -1,0 +1,3 @@
+C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombatContent\obj\x86\Debug\RedCombatContent.contentprojResolveAssemblyReference.cache
+C:\Users\123066\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombatContent\obj\x86\Debug\RedCombatContent.contentprojResolveAssemblyReference.cache
+C:\Users\123066\Desktop\RedCombat\RedCombat\RedCombatContent\obj\x86\Debug\RedCombatContent.contentprojResolveAssemblyReference.cache

@@ -18,6 +18,19 @@ namespace RedCombat
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Cloud[] clouds;
+        int CLOUD_AMOUNT;
+        Texture2D cloudText;
+        Random rand = new Random();
+        Color[] mapColors = { Color.SkyBlue, Color.DarkOrange, Color.MidnightBlue, new Color(220,220,220) };
+        int mapColor;
+        Rectangle background;
+        Texture2D blank;
+        bool toggleClouds;
+        GamePadState gamepad = GamePad.GetState(PlayerIndex.One);
+        Plane p1;
+        Plane p2;
+        int i = 0;
 
         public Game1()
         {
@@ -36,7 +49,17 @@ namespace RedCombat
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            CLOUD_AMOUNT = 3;
+            clouds = new Cloud[CLOUD_AMOUNT];
+            mapColor = 0; //button
+            background = new Rectangle(0, 0, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
+            toggleClouds = true; //button
+            Texture2D text = Content.Load<Texture2D>("Fighter");
+            Texture2D text1 = Content.Load<Texture2D>("Bomber");
+            Texture2D text2 = Content.Load<Texture2D>("Stealth");
+            Texture2D bull = Content.Load<Texture2D>("Ammo");
+            p1 = new Plane(text, new Rectangle(100, 100, 50, 50), Color.Blue, new Vector2(5, 5), 120, 5, bull, PlayerIndex.One);
+            p2 = new Plane(text, new Rectangle(100, 100, 50, 50), Color.OrangeRed, new Vector2(5, 5), 0, 5, bull, PlayerIndex.Two);
             base.Initialize();
         }
 
@@ -48,7 +71,12 @@ namespace RedCombat
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            cloudText = Content.Load<Texture2D>("Cloud");
+            blank = Content.Load<Texture2D>("Blank");
+            for (int i = 0; i < clouds.Length; i++)
+            {
+                clouds[i] = new Cloud(cloudText, new Rectangle(rand.Next(0, 1080), rand.Next(0, 720), rand.Next(200, 300), rand.Next(100, 150)));
+            }
             // TODO: use this.Content to load your game content here
         }
 
@@ -71,8 +99,20 @@ namespace RedCombat
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
+            for (int i = 0; i < clouds.Length; i++)
+            {
+                clouds[i].CloudUpdate();
+            }
+            i++;
+            if (p1 != null)
+            {
+                p1.Update();
+            }
+            if (p2 != null)
+            {
+                p2.Update();
+            }
 
-            // TODO: Add your update logic here
 
             base.Update(gameTime);
         }
@@ -83,9 +123,18 @@ namespace RedCombat
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.SkyBlue);
+            GraphicsDevice.Clear(Color.White);
 
-            // TODO: Add your drawing code here
+            spriteBatch.Begin();
+            spriteBatch.Draw(blank, background, mapColors[mapColor]);
+            p1.Draw(spriteBatch);
+            p2.Draw(spriteBatch);
+            if (toggleClouds)
+            for (int i = 0; i < clouds.Length; i++)
+            {
+                spriteBatch.Draw(clouds[i].CloudText, clouds[i].CloudRect, Color.White);
+            }
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
