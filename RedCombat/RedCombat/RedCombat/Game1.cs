@@ -19,7 +19,7 @@ namespace RedCombat
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         GamePadState gamepad = GamePad.GetState(PlayerIndex.One);
-        Plane p1;
+        Plane p1, p2, p3;
 
         int i = 0;
 
@@ -48,7 +48,9 @@ namespace RedCombat
             Texture2D text2 = Content.Load<Texture2D>("Stealth");
             Texture2D bull = Content.Load<Texture2D>("Ammo");
 
-            p1 = new Plane(text, new Rectangle(100, 100, 50, 50), Color.White, new Vector2(4, 4), 5, 5, bull, PlayerIndex.One);
+            p1 = new Plane(text1, new Rectangle(100, 100, 70, 70), Color.Blue, new Vector2(3, 3), 60, 2, bull, PlayerIndex.One); //Bomber
+            //p3 = new Plane(text, new Rectangle(100, 200, 50, 50), Color.Red, new Vector2(5, 5), 60, 1, bull, PlayerIndex.One); //Fighter
+            p2 = new Plane(text2, new Rectangle(100, 300, 60, 60), Color.Green, new Vector2(4, 4), 60, 1, bull, PlayerIndex.Two); //Stealth
             base.Initialize();
         }
 
@@ -91,6 +93,31 @@ namespace RedCombat
             {
                 p1.Update();
             }
+            if (p2 != null)
+            {
+                p2.Update();
+            }
+
+            for (int i = 0; i < p1.bullets.Count; i++)
+            {
+                if (p1.bullets[i].rect().Intersects(p2.rect()))
+                {
+                    p2.lives--;
+                    if (!p2.isInvulnerable)
+                        p2.isDead = true;
+                    p1.bullets.Remove(p1.bullets[i]);
+                }
+            }
+            for (int i = 0; i < p2.bullets.Count; i++)
+            {
+                if (p2.bullets[i].rect().Intersects(p1.rect()))
+                {
+                    p1.lives--;
+                    if (!p1.isInvulnerable)
+                        p1.isDead = true;
+                    p2.bullets.Remove(p2.bullets[i]);
+                }
+            }
             // TODO: Add your update logic here
 
             base.Update(gameTime);
@@ -107,6 +134,7 @@ namespace RedCombat
             // TODO: Add your drawing code here
             spriteBatch.Begin();
             p1.Draw(spriteBatch);
+            p2.Draw(spriteBatch);
             spriteBatch.End();
             base.Draw(gameTime);
         }

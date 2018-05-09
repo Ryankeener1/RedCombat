@@ -14,7 +14,7 @@ namespace RedCombat
     class Bullet
     {
         Texture2D texture;
-        Rectangle rect;
+        Rectangle Rect;
         Color color;
         double rotation;
         Vector2 velocity;
@@ -22,7 +22,7 @@ namespace RedCombat
         public Bullet(Texture2D tex, Rectangle rec, Color col, double rot, int speed)
         {
             texture = tex;
-            rect = rec;
+            Rect = rec;
             color = col;
             rotation = rot;
             velocity = new Vector2(speed * (float)Math.Cos(rotation), speed * (float)Math.Sin(rotation));
@@ -30,14 +30,21 @@ namespace RedCombat
 
         public void Update()
         {
-            rect.X += (int)velocity.X;
-            rect.Y += (int)velocity.Y;
+            Rect.X += (int)velocity.X;
+            Rect.Y += (int)velocity.Y;
+        }
+
+        public Rectangle rect()
+        {
+            return new Rectangle(Rect.X - Rect.Width / 2, Rect.Y - Rect.Height / 2, Rect.Width, Rect.Height);
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, rect, null, color, (float)rotation, new Vector2(texture.Width / 2, texture.Height / 2), SpriteEffects.None, 1);
+            spriteBatch.Draw(texture, Rect, null, color, (float)rotation, new Vector2(texture.Width / 2, texture.Height / 2), SpriteEffects.None, 1);
         }
+
+
 
     }
 }
