@@ -2,13 +2,85 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>Ammo.png</Source>
-      <Name>Ammo</Name>
+      <Source>R Slider.jpg</Source>
+      <Name>R Slider</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\227099\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Ammo.xnb</Output>
-      <Time>2018-05-01T09:44:30-05:00</Time>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\R Slider.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
+    </Item>
+    <Item>
+      <Source>G Slider.jpg</Source>
+      <Name>G Slider</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\G Slider.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
+    </Item>
+    <Item>
+      <Source>B Slider.jpg</Source>
+      <Name>B Slider</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\B Slider.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
+    </Item>
+    <Item>
+      <Source>RC Left.png</Source>
+      <Name>RC Left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Left.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
+    </Item>
+    <Item>
+      <Source>RC Player1.png</Source>
+      <Name>RC Player1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Player1.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
+    </Item>
+    <Item>
+      <Source>RC Player2.png</Source>
+      <Name>RC Player2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Player2.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
+    </Item>
+    <Item>
+      <Source>RC Random.png</Source>
+      <Name>RC Random</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Random.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
+    </Item>
+    <Item>
+      <Source>RC Ready.png</Source>
+      <Name>RC Ready</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Ready.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
+    </Item>
+    <Item>
+      <Source>RC Right.png</Source>
+      <Name>RC Right</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Right.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
     </Item>
     <Item>
       <Source>Bomber.png</Source>
@@ -16,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\227099\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Bomber.xnb</Output>
-      <Time>2018-05-01T09:44:30-05:00</Time>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Bomber.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
     </Item>
     <Item>
       <Source>Fighter.png</Source>
@@ -25,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\227099\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Fighter.xnb</Output>
-      <Time>2018-05-01T09:44:30-05:00</Time>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Fighter.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
     </Item>
     <Item>
       <Source>Stealth.png</Source>
@@ -34,8 +106,62 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\227099\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Stealth.xnb</Output>
-      <Time>2018-05-09T11:06:27.0323768-05:00</Time>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Stealth.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Selecter.png</Source>
+      <Name>Selecter</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Selecter.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
+    </Item>
+    <Item>
+      <Source>ColorSlider.png</Source>
+      <Name>ColorSlider</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\ColorSlider.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Logo.JPG</Source>
+      <Name>Logo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Logo.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Ammo.png</Source>
+      <Name>Ammo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Ammo.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Cloud.png</Source>
+      <Name>Cloud</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Cloud.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFont1.spritefont</Source>
+      <Name>SpriteFont1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
+      <Time>2018-05-11T09:37:12-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -44,10 +170,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\227099\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombatContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\227099\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombat\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\227099\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombat\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\227099\Desktop\RedCombat-Test\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombatContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\227099\Desktop\RedCombat-Kyle-Is-An-Autist\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

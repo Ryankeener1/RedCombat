@@ -25,6 +25,7 @@ namespace RedCombat
             Rect = rec;
             color = col;
             rotation = rot;
+            speed = 10;
             velocity = new Vector2(speed * (float)Math.Cos(rotation), speed * (float)Math.Sin(rotation));
         }
 

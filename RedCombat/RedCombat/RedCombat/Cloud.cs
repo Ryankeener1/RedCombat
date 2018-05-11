@@ -13,7 +13,7 @@ namespace RedCombat
 {
     class Cloud
     {
-   
+
         public Texture2D CloudText;
         public Rectangle CloudRect;
         double CLOUD_VELOCITY;

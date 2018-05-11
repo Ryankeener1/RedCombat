@@ -16,11 +16,12 @@ namespace RedCombat
         GamePadState gs = GamePad.GetState(PlayerIndex.One);
         PlayerIndex Index = 0;
         public Texture2D Text2D;
-       
-        Rectangle Rect;        
+
+        Rectangle Rect;
 
         Vector2 Velocity;
-        Vector2 vel;
+        int SpawnPointX, SpawnPointY;
+
 
         int ReloadTime = 0;
         int MAXReloadTime;
@@ -53,7 +54,9 @@ namespace RedCombat
             bulletTex = bulletT;
             Index = g;
             lives = 3;
-            temp = Color.Transparent;            
+            temp = Color.Transparent;
+            SpawnPointX = Rect.X;
+            SpawnPointY = Rect.Y;
         }
 
         public void Update()
@@ -63,26 +66,26 @@ namespace RedCombat
             if (gs.Triggers.Right == 1)
                 Shoot();
 
-            
-        
+
+
             //Reloading
             if (Reloading)
             {
                 ReloadTime++;
-                if(ReloadTime >= MAXReloadTime)
+                if (ReloadTime >= MAXReloadTime)
                 {
                     Reloading = false;
-                   
+
 
                 }
             }
 
-            //Shot
-            
-            
+            //if (gs.Buttons.X == ButtonState.Pressed)
+
+
 
             //DEAD
-            if (isDead && !isInvulnerable)
+            if (isDead)
             {
                 if (RespawnTime == 0)
                 {
@@ -96,7 +99,7 @@ namespace RedCombat
                     isDead = false;
                     InvulnerableTime = 0;
                     isInvulnerable = true;
-                    Rect = new Rectangle(100, 100, Rect.Width, Rect.Height);
+                    Rect = new Rectangle(SpawnPointX, SpawnPointY, Rect.Width, Rect.Height);
                     rotation = 0;
                     RespawnTime = 0;
                 }
@@ -106,7 +109,7 @@ namespace RedCombat
             if (isInvulnerable)
             {
                 InvulnerableTime++;
-                if(InvulnerableTime >= 120)
+                if (InvulnerableTime >= 120)
                 {
                     isInvulnerable = false;
 
@@ -115,7 +118,7 @@ namespace RedCombat
 
 
 
-            
+
             if (((rotation + 5 * (gs.ThumbSticks.Right.X)) % 360) >= 0)
             {
                 rotation = (int)((rotation + 5 * (gs.ThumbSticks.Right.X)) % 360);
@@ -167,7 +170,7 @@ namespace RedCombat
             {
                 double rot = rotation * (Math.PI / 180);
                 if (NumOfBullets == 1)
-                    bullets.Add(new Bullet(bulletTex, new Rectangle(Rect.X + (int)(25*Math.Cos(rot)), Rect.Y + (int)(25 * Math.Sin(rot)), 20, 10), PlaneColor, rot, 8));
+                    bullets.Add(new Bullet(bulletTex, new Rectangle(Rect.X + (int)(25 * Math.Cos(rot)), Rect.Y + (int)(25 * Math.Sin(rot)), 20, 10), PlaneColor, rot, 8));
                 if (NumOfBullets == 2)
                 {
                     bullets.Add(new Bullet(bulletTex, new Rectangle(Rect.X + (int)(20 * Math.Sin(-rot)), Rect.Y + (int)(20 * Math.Cos(-rot)), 20, 10), PlaneColor, rot, 8));
@@ -175,10 +178,10 @@ namespace RedCombat
                 }
                 if (NumOfBullets == 4)
                 {
-                    bullets.Add(new Bullet(bulletTex, new Rectangle(Rect.X + (int)(30 * Math.Sin(-rot)), Rect.Y + (int)(30 * Math.Cos(-rot)), 20, 10), PlaneColor, rot, 8));
-                    bullets.Add(new Bullet(bulletTex, new Rectangle(Rect.X + (int)(10 * Math.Sin(-rot)), Rect.Y + (int)(10 * Math.Cos(-rot)), 20, 10), PlaneColor, rot, 8));
-                    bullets.Add(new Bullet(bulletTex, new Rectangle(Rect.X + (int)(-10 * Math.Sin(-rot)), Rect.Y + (int)(-10 * Math.Cos(-rot)), 20, 10), PlaneColor, rot, 8));
-                    bullets.Add(new Bullet(bulletTex, new Rectangle(Rect.X + (int)(-30 * Math.Sin(-rot)), Rect.Y + (int)(-30 * Math.Cos(-rot)), 20, 10), PlaneColor, rot, 8));
+                    bullets.Add(new Bullet(bulletTex, new Rectangle(Rect.X + (int)(20 * Math.Sin(-rot)), Rect.Y + (int)(20 * Math.Cos(-rot)), 20, 10), PlaneColor, rot, 8));
+                    bullets.Add(new Bullet(bulletTex, new Rectangle(Rect.X + (int)(-20 * Math.Sin(-rot)), Rect.Y + (int)(-20 * Math.Cos(-rot)), 20, 10), PlaneColor, rot, 8));
+                    bullets.Add(new Bullet(bulletTex, new Rectangle(Rect.X, Rect.Y, 20, 10), PlaneColor, rot - Math.PI / 2, 8));
+                    bullets.Add(new Bullet(bulletTex, new Rectangle(Rect.X, Rect.Y, 20, 10), PlaneColor, rot + Math.PI / 2, 8));
                 }
                 ReloadTime = 0;
                 Reloading = true;
@@ -188,7 +191,7 @@ namespace RedCombat
         public void IsShot()
         {
             isDead = true;
-            
+
         }
 
         public void Draw(SpriteBatch spriteBatch)
