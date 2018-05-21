@@ -13,3 +13,45 @@ C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Microsoft.Xn
 C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\obj\x86\Debug\RedCombat.exe
 C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\obj\x86\Debug\RedCombat.pdb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\R Slider.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\G Slider.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\B Slider.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Left.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Player1.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Player2.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Random.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Ready.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Right.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Bomber.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Fighter.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Stealth.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\RedCombat.exe
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\RedCombat.pdb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Microsoft.Xna.Framework.dll
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.dll
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.dll
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Microsoft.Xna.Framework.xml
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Microsoft.Xna.Framework.Game.xml
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\obj\x86\Debug\RedCombat.csprojResolveAssemblyReference.cache
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\obj\x86\Debug\RedCombat.exe
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\obj\x86\Debug\RedCombat.pdb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Selecter.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\ColorSlider.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Logo.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\SpriteFont1.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Ammo.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Cloud.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Day.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Night.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Dusk.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Dawn.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Speedy Bullet.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Invisibility.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Multishot.xnb
+C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Heart.xnb

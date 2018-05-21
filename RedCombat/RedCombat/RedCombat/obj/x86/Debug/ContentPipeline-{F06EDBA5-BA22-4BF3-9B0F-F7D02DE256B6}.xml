@@ -1,6 +1,240 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>R Slider.jpg</Source>
+      <Name>R Slider</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\R Slider.xnb</Output>
+      <Time>2018-04-20T11:59:11.8955605-05:00</Time>
+    </Item>
+    <Item>
+      <Source>G Slider.jpg</Source>
+      <Name>G Slider</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\G Slider.xnb</Output>
+      <Time>2018-04-20T11:59:15.1902452-05:00</Time>
+    </Item>
+    <Item>
+      <Source>B Slider.jpg</Source>
+      <Name>B Slider</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\B Slider.xnb</Output>
+      <Time>2018-04-20T11:59:17.5635062-05:00</Time>
+    </Item>
+    <Item>
+      <Source>RC Left.png</Source>
+      <Name>RC Left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Left.xnb</Output>
+      <Time>2018-04-25T11:22:29.3980025-05:00</Time>
+    </Item>
+    <Item>
+      <Source>RC Player1.png</Source>
+      <Name>RC Player1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Player1.xnb</Output>
+      <Time>2018-04-25T11:22:29.3980025-05:00</Time>
+    </Item>
+    <Item>
+      <Source>RC Player2.png</Source>
+      <Name>RC Player2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Player2.xnb</Output>
+      <Time>2018-04-25T11:22:29.4136027-05:00</Time>
+    </Item>
+    <Item>
+      <Source>RC Random.png</Source>
+      <Name>RC Random</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Random.xnb</Output>
+      <Time>2018-04-25T11:22:29.4136027-05:00</Time>
+    </Item>
+    <Item>
+      <Source>RC Ready.png</Source>
+      <Name>RC Ready</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Ready.xnb</Output>
+      <Time>2018-04-25T11:22:29.3668021-05:00</Time>
+    </Item>
+    <Item>
+      <Source>RC Right.png</Source>
+      <Name>RC Right</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\RC Right.xnb</Output>
+      <Time>2018-04-25T11:22:29.3824023-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Bomber.png</Source>
+      <Name>Bomber</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Bomber.xnb</Output>
+      <Time>2018-04-25T11:36:15.5928038-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Fighter.png</Source>
+      <Name>Fighter</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Fighter.xnb</Output>
+      <Time>2018-04-25T11:36:15.5772034-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Stealth.png</Source>
+      <Name>Stealth</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Stealth.xnb</Output>
+      <Time>2018-05-09T11:05:56.7273874-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Selecter.png</Source>
+      <Name>Selecter</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Selecter.xnb</Output>
+      <Time>2018-04-27T11:52:05.0609865-05:00</Time>
+    </Item>
+    <Item>
+      <Source>ColorSlider.png</Source>
+      <Name>ColorSlider</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\ColorSlider.xnb</Output>
+      <Time>2018-05-03T11:26:49.6979672-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Logo.JPG</Source>
+      <Name>Logo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Logo.xnb</Output>
+      <Time>2018-05-07T11:51:57.4971135-05:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFont1.spritefont</Source>
+      <Name>SpriteFont1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
+      <Time>2018-05-07T11:54:04.9704083-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Ammo.png</Source>
+      <Name>Ammo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Ammo.xnb</Output>
+      <Time>2018-05-09T11:37:54.4999733-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Cloud.png</Source>
+      <Name>Cloud</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Cloud.xnb</Output>
+      <Time>2018-05-11T10:57:32.9658583-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Day.png</Source>
+      <Name>Day</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Day.xnb</Output>
+      <Time>2018-05-11T11:43:06.2810018-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Night.png</Source>
+      <Name>Night</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Night.xnb</Output>
+      <Time>2018-05-11T11:43:08.6844481-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Dusk.png</Source>
+      <Name>Dusk</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Dusk.xnb</Output>
+      <Time>2018-05-11T11:43:10.915291-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Dawn.png</Source>
+      <Name>Dawn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Dawn.xnb</Output>
+      <Time>2018-05-11T11:43:13.2985378-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Speedy Bullet.png</Source>
+      <Name>Speedy Bullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Speedy Bullet.xnb</Output>
+      <Time>2018-05-17T11:47:38.5531958-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Invisibility.png</Source>
+      <Name>Invisibility</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Invisibility.xnb</Output>
+      <Time>2018-05-17T11:47:44.5107915-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Multishot.png</Source>
+      <Name>Multishot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Multishot.xnb</Output>
+      <Time>2018-05-17T11:47:47.8001204-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Heart.png</Source>
+      <Name>Heart</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\Heart.xnb</Output>
+      <Time>2018-05-17T11:48:19.4732874-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{F06EDBA5-BA22-4BF3-9B0F-F7D02DE256B6}</ContentProjectGUID>
@@ -8,12 +242,36 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombatContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\176282\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombatContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\189122\Desktop\RedCombat\RedCombat\RedCombat\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
         <Value>2017-05-17T12:17:11.6083928-05:00</Value>
